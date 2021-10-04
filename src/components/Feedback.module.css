@@ -1,0 +1,7 @@
+.feedbackBtn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.feedbackBtn {
+  border-radius: 5px;
+}
