@@ -1,13 +1,13 @@
-// import React from "react";
+import React from "react";
 
-// const FeedbackValue = ({ onGood, onNeutral, onBad }) => (
-//   <div>
-//     <ul className="statsName">
-//       <li className="good">Good:{onGood}</li>
-//       <li className="neutral">Neutral:{onNeutral}</li>
-//       <li className="bad">Bad:{onBad}</li>
-//     </ul>
-//   </div>
-// );
+const FeedbackValue = ({ valueGood, valueNeutral, valueBad }) => (
+  <div>
+    <ul className="statsName">
+      <li className="good">Good:{valueGood}</li>
+      <li className="neutral">Neutral:{valueNeutral}</li>
+      <li className="bad">Bad:{valueBad}</li>
+    </ul>
+  </div>
+);
 
-// export default FeedbackValue;
+export default FeedbackValue;
