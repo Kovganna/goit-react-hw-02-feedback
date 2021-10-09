@@ -1,18 +1,26 @@
 import React from "react";
+import PropTypes from "prop-types";
 import s from "./Feedback.module.css";
 
-const FeedbackBtn = ({ onGood, onNeutral, onBad }) => (
+const FeedbackBtn = ({ grades, onFeedbackValue }) => (
   <div className="btn">
-    <button type="button" onClick={onGood} className={s.feedbackBtn}>
-      Good
-    </button>
-    <button type="button" onClick={onNeutral} className={s.feedbackBtn}>
-      Neutral
-    </button>
-    <button type="button" onClick={onBad} className={s.feedbackBtn}>
-      Bad
-    </button>
+    {grades.map((grade) => (
+      <button
+        key={grade}
+        type="button"
+        value={grade}
+        onClick={onFeedbackValue}
+        className={s.feedbackBtn}
+      >
+        {grade}
+      </button>
+    ))}
   </div>
 );
+
+FeedbackBtn.propTypes = {
+  grades: PropTypes.array,
+  onFeedbackValue: PropTypes.func.isRequired,
+};
 
 export default FeedbackBtn;
