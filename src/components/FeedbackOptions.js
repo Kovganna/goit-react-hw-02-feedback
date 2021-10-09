@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import s from "./Feedback.module.css";
 
-const FeedbackBtn = ({ grades, onFeedbackValue }) => (
+const FeedbackOptions = ({ grades, onFeedbackValue }) => (
   <div className="btn">
     {grades.map((grade) => (
       <button
@@ -18,9 +18,9 @@ const FeedbackBtn = ({ grades, onFeedbackValue }) => (
   </div>
 );
 
-FeedbackBtn.propTypes = {
+FeedbackOptions.propTypes = {
   grades: PropTypes.array,
   onFeedbackValue: PropTypes.func.isRequired,
 };
 
-export default FeedbackBtn;
+export default FeedbackOptions;
