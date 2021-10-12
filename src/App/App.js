@@ -1,8 +1,8 @@
 import { Component } from "react";
 import "./App.css";
-import Section from "./components/Section";
-import Statistics from "./components/Statistics";
-import FeedbackOptions from "./components/FeedbackOptions";
+import Section from "../components/Section";
+import Statistics from "../components/Statistics";
+import FeedbackOptions from "../components/FeedbackOptions";
 
 class App extends Component {
   state = {
