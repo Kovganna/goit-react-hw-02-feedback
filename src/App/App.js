@@ -12,10 +12,10 @@ class App extends Component {
   };
 
   onFeedbackValue = (e) => {
-    const FeedbackOptions = e.target.value;
+    const feedbackOptions = e.target.value;
     this.setState((prevState) => ({
       ...prevState,
-      [FeedbackOptions]: prevState[FeedbackOptions] + 1,
+      [feedbackOptions]: prevState[feedbackOptions] + 1,
     }));
   };
 
